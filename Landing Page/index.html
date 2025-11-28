@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mangrove Wonorejo Ecotourism</title>
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- ICONS (tanpa CDN eksternal) -->
+  <style>
+    .icon { width: 20px; vertical-align: middle; margin-right: 6px; }
+  </style>
+</head>
+
+<script>
+  // === STICKY HEADER ===
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  // === MOBILE NAV ===
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("show");
+  }
+
+  // === SCROLL REVEAL ===
+  function reveal() {
+    document.querySelectorAll(".reveal").forEach((el) => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  }
+  window.addEventListener("scroll", reveal);
+  reveal();
+</script>
+
+
+<body>
+
+  <!-- ========================================================= -->
+  <!-- HERO + HEADER -->
+  <!-- ========================================================= -->
+  <div class="hero-wrapper">
+
+    <header>
+      <div class="header-container">
+
+        <div class="logo">
+          <h2>Mangrove Wonorejo</h2>
+        </div>
+
+        <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+
+        <nav>
+          <a href="#about">Tentang</a>
+          <a href="#activities">Aktivitas</a>
+          <a href="#pricing">Tiket</a>
+          <a href="#gallery">Galeri</a>
+        <a href="#location">Lokasi</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <section class="hero reveal">
+      <h1>Ekowisata Mangrove Wonorejo</h1>
+      <p>Jelajahi ruang hijau terbesar Surabaya—menyusuri sungai, melihat satwa liar, dan menikmati ketenangan hutan mangrove yang terjaga.</p>
+
+      <div class="hero-buttons">
+        <a href="#activities" class="btn-primary">Jelajahi Aktivitas</a>
+        <a href="#pricing" class="btn-secondary">Lihat Harga Tiket</a>
+      </div>
+    </section>
+
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- ABOUT -->
+  <!-- ========================================================= -->
+  <section id="about" class="section about reveal">
+    <h2>Tentang Ekowisata Mangrove Wonorejo</h2>
+
+    <p>
+      Terletak di kawasan Surabaya Timur, Ekowisata Mangrove Wonorejo merupakan area konservasi seluas 
+      <strong>±200 hektar</strong> dengan lebih dari <strong>150 spesies mangrove</strong>.
+      Selain sebagai destinasi wisata alam, kawasan ini juga digunakan untuk edukasi, penelitian,
+      dan program konservasi lingkungan.
+    </p>
+
+    <p>
+      Hingga saat ini, lebih dari <strong>350.000 bibit bakau</strong> telah ditanam bersama 
+      perusahaan, komunitas, sekolah, dan relawan. Kami berkomitmen menjaga kelestarian ekosistem
+      demi keberlanjutan lingkungan kota Surabaya.
+    </p>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- ACTIVITIES -->
+  <!-- ========================================================= -->
+  <section id="activities" class="section services reveal">
+    <h2>Aktivitas Wisata Alam</h2>
+    <p>Nikmati aktivitas outdoor yang dirancang untuk memberikan pengalaman ekowisata terbaik.</p>
+
+    <div class="services-list">
+
+      <div class="service-card">
+        <h3>🚤 Wisata Perahu</h3>
+        <p>Perjalanan menyusuri sungai di antara hutan bakau yang asri dan tenang.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🌿 Tracking Boardwalk</h3>
+        <p>Jalur kayu panjang yang ideal untuk eksplorasi, foto, dan pengamatan satwa.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>📚 Edukasi Mangrove</h3>
+        <p>Program pembelajaran ekosistem mangrove untuk pelajar maupun umum.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>🌱 Penanaman Mangrove</h3>
+        <p>Kegiatan CSR, pelestarian alam, dan pendampingan oleh tim ahli.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- PRICING -->
+  <!-- ========================================================= -->
+  <section id="pricing" class="section reveal">
+    <h2 >Harga Tiket Masuk</h2>
+
+    <p >Harga tiket berlaku untuk wisatawan lokal dan mancanegara.</p>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Dewasa</h3>
+        <p class="price">Rp 25.000</p>
+        <small>Akses tracking & spot foto</small>
+      </div>
+
+      <div class="price-card">
+        <h3>Anak-Anak</h3>
+        <p class="price">Rp 10.000</p>
+        <small>Usia 5–12 tahun</small>
+      </div>
+
+      <div class="price-card">
+        <h3>Wisata Perahu</h3>
+        <p class="price">Rp 25.000 – 50.000</p>
+        <small>Harga sesuai rute perjalanan</small>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- GALLERY -->
+  <!-- ========================================================= -->
+  <section id="gallery" class="section reveal">
+    <h2>Galeri Mangrove Wonorejo</h2>
+
+    <div class="gallery-grid">
+      <img src="image/img1.webp" class="gallery-img">
+      <img src="image/img2.webp" class="gallery-img">
+      <img src="image/img3.webp" class="gallery-img">
+      <img src="image/img4.webp" class="gallery-img">
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- MAP -->
+  <!-- ========================================================= -->
+  <section class="section reveal" id="location">
+    <h2>Lokasi Kami</h2>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.85414267678!2d112.81152087499017!3d-7.0095125929766505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fdf80f3eafe5%3A0xed7997237a761f77!2sEkowisata%20Mangrove%20Wonorejo!5e0!3m2!1sid!2sid!4v1732804359000!5m2!1sid!2sid"
+        width="100%"
+        height="380"
+        style="border:0; border-radius:14px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+
+  <!-- ========================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================= -->
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>Kontak Kami</h3>
+        <p>Email: <strong>info@mangrovewonorejo.co.id</strong></p>
+        <p>Telepon: <strong>+62 812-3456-7890</strong></p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Alamat</h3>
+        <p>Jl. Raya Wonorejo No.1, Rungkut</p>
+        <p>Surabaya, Jawa Timur</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Jam Operasional</h3>
+        <p>Setiap Hari</p>
+        <p>08:00 – 16:00 WIB</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Sosial Media</h3>
+        <p>
+          <a href="https://www.instagram.com/mangrovewonorejo/" class="footer-link">
+            <img class="icon" src="icons/ig.svg"> Instagram
+          </a><br>
+          <a href="https://wa.me/6281330882882" class="footer-link">
+            <img class="icon" src="icons/wa.svg"> WhatsApp
+          </a><br>
+          <a href="mailto:wonorejosurabaya@gmail.com" class="footer-link">
+            <img class="icon" src="icons/email.svg"> Email
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2025 Mangrove Wonorejo Ecotourism. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
