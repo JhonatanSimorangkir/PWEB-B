@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame Layout HTML dan CSS</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #6aa0e8;
+        }
+        header {
+            background-color: #4f86d6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #3f6fb5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            min-height: 400px;
+        }
+        aside {
+            width: 200px;
+            background-color: #5d90d9;
+            padding: 15px;
+            color: white;
+        }
+        main {
+            flex: 1;
+            background-color: #7fb4f2;
+            padding: 20px;
+        }
+        footer {
+            background-color: #4f86d6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<h1>Frame Layout HTML dan CSS</h1>
+<p>Contoh layout sederhana menggunakan CSS</p>
+</header>
+
+
+<nav>
+<a href="#">Home</a>
+<a href="tabel.html">Tabel</a>
+<a href="form.html">Form</a>
+</nav>
+
+
+<div class="container">
+<aside>
+<h3>Menu Sidebar</h3>
+<ul>
+<li>Menu 1</li>
+<li>Menu 2</li>
+<li>Menu 3</li>
+</ul>
+</aside>
+
+
+<main>
+<h2>Selamat Datang</h2>
+<p>
+Ini adalah contoh layout website sederhana yang menyerupai frame.
+Header berada di atas, menu navigasi di bawah header,
+sidebar di sebelah kiri, dan konten utama di sebelah kanan.
+</p>
+<p>
+Klik menu <b>Tabel</b> atau <b>Form</b> untuk membuka halaman terkait.
+</p>
+</main>
+</div>
+
+
+<footer>
+<h3>Kontak</h3>
+<p>Email: contoh@email.com</p>
+<p>Telp: 08123456789</p>
+<p>Alamat: Kota Anda</p>
+</footer>
+
+
+</body>
+</html>
