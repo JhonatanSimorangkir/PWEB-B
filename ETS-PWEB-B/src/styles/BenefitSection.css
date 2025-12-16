@@ -1,0 +1,70 @@
+.benefit-section {
+  background-color: #f8fbff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.benefit-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 3rem;
+}
+
+/* Grid layout untuk kartu benefit */
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Setiap kartu benefit */
+.benefit-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Ikon besar di atas */
+.benefit-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Judul kartu */
+.benefit-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Deskripsi */
+.benefit-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .benefit-title {
+    font-size: 1.8rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+}

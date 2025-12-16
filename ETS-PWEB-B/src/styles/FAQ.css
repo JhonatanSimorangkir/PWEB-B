@@ -1,0 +1,79 @@
+.faq-section {
+  background-color: #f8f9fb;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #007bff;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-3px);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+/* Jawaban */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  transition: all 0.4s ease;
+  margin-top: 0;
+}
+
+/* Jika open */
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  margin-top: 0.75rem;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+}
